@@ -1,0 +1,133 @@
+@import "../bootstrap-5.0.2/scss/functions";
+@import "../bootstrap-5.0.2/scss/variables";
+@import "../bootstrap-5.0.2/scss/mixins";
+@import "../bootstrap-5.0.2/scss/utilities";
+
+
+$utilities: (
+  "width": (
+    property: width,
+    class: w,
+    values: (
+      10:10%,
+      15:15%,
+      20:20%,
+      25:25%,
+      30:30%,
+      35:35%,
+      40:40%,
+      45:45%,
+      50:50%,
+      65:65%,
+      70:70%,
+      75:75%,
+      80:80%,
+      85:85%,
+      90:90%,
+      95:95%,
+     100: 100%,
+    auto: auto,
+    ),
+  ),
+  "line-height": (
+      property: line-height,
+      class: lh,
+      values: (
+        1:1,
+        2:2,
+        3:3,
+        4:4,
+        5:5,
+        sm: $line-height-sm,
+        base: $line-height-base,
+        lg: $line-height-lg,
+      )
+    ),
+    "height": (
+      property: height,
+      class: h,
+      values: (
+        5:5%,
+        10:10%,
+        15:15%,
+        20:20%,
+        25:25%,
+        30:30%,
+        35:35%,
+        40:40%,
+        45:45%,
+        50:50%,
+        55:55%,
+        60:60%,
+        65:65%,
+        70:70%,
+        75:75%,
+        80:80%,
+        85:85%,
+        90:90%,
+        95:95%,
+        100:100%,
+        auto: auto
+      )
+    ),
+);
+.border-top-class {
+  border:none ;
+}
+.border-top-class:hover{
+  border-top: 2px solid red;
+  }
+  
+
+
+ 
+$spacers: map-merge(
+ (
+  0: 0,
+  1: ($spacer * .25),
+  2: ($spacer * .5),
+  3: $spacer,
+  4: ($spacer * 1.5),
+  5: ($spacer * 3),
+ ),
+ $spacers
+);
+$spacers: (
+ 
+// New item
+  6: ($spacer * 4),
+  7:($spacer * 5),
+  8:($spacer * 6),
+  9:($spacer * 7),
+  10:($spacer * 10),
+  11:($spacer * 11),
+  15:($spacer * 15),
+);
+
+$position-values:map-merge(
+ ( 0: 0,
+  50: 50%,
+  100: 100%),
+  $position-values
+);
+
+$position-values: (
+  0: 0,
+  5:5px,
+  10:10%,
+  20:20%,
+  25:25%,
+  30:30%,
+  35:35%,
+  40:40%,
+  55:55%,
+  60:60%,
+  70:70%,
+  75:75%,
+  80:80%,
+  85:85%,
+  90:90%,
+ ) ; 
+
+
+ @import "../bootstrap-5.0.2/scss/bootstrap.scss";

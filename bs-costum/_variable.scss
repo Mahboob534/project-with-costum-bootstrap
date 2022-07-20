@@ -1,0 +1,53 @@
+@import "../bootstrap-5.0.2/scss/functions";
+@import "../bootstrap-5.0.2/scss/variables";
+@import "../bootstrap-5.0.2/scss/mixins";
+@import "../bootstrap-5.0.2/scss/utilities";
+@import '../bootstrap-5.0.2/scss/nav';
+@import '../bootstrap-5.0.2/scss/navbar';
+
+$main-color1: #ff5673;
+$main-color2: #3a0568;
+$main-color3: #1de2cf;
+$light-color: #F9FAFF;
+$dark-color:#1F1D36;
+
+$primary: $main-color2;
+$green: $main-color3;
+$cherry: $main-color1;
+$lightgray: $light-color;
+$darkblack:$dark-color;
+
+$theme-colors: () !default;
+$theme-colors: map-merge(
+  (
+    "primary": $primary,
+    "secondary": $secondary,
+    "info": $info,
+    "warning": $warning,
+    "danger": $danger,
+    "light": $light,
+    "dark": $dark,
+  ),
+  $theme-colors
+);
+
+$theme-colors: (
+  "cherry": $cherry,
+  "light-color": $lightgray,
+  "dark-balck":$darkblack,
+);
+
+$navbar-light-toggler-icon-bg:url("../../images/MenuIcon1.jpg");
+
+
+
+$border-radius:1rem;
+
+
+
+$card-border-radius:1.2rem ;
+
+$carousel-indicator-active-bg: $light-color;
+$carousel-dark-indicator-active-bg:  $main-color1;
+
+@import "../bootstrap-5.0.2/scss/bootstrap.scss";

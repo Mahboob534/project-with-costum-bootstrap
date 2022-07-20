@@ -1,0 +1,125 @@
+@import './variable';
+@import './utilities';
+@import './mixin';
+
+
+@font-face {
+    font-family: "Vazirmatn";
+    src: url('../fonts/webfonts/Vazirmatn-Regular.woff2') format('woff2');
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  *{
+     font-family: "Vazirmatn";
+     font-size: 16px;
+     box-sizing: border-box;
+  }
+
+  h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    margin-bottom: 0.5rem;
+    font-family: "Vazirmatn";
+    font-weight: 800;
+    line-height: 1.2;
+    color: inherit;
+    }
+  .imgicon {
+    width:100%;
+    object-fit:cover;
+    height: 6rem;
+
+  }
+  .position-cherry{
+    left:0;
+    top:80%;
+    
+
+  }
+  .position-timeline{
+    top:-60px; 
+  }
+  .cardCarosual {
+    width:400px;
+    height:200px;
+  }
+  .backgroundimg1 {
+      @include backgroundImage("../images/a11.jpg");
+      width:432px;
+      height:323px;
+   }
+   
+  .backgroundimg2 {
+       @include backgroundImage("../images/a13.png") ;
+       width:432px;
+       height:323px;
+  }
+  .backgroundimg3 {
+    @include backgroundImage("../images/a12.png") ;
+    width:423px;
+    height:323px;
+  }
+  .backgroundimg4 {
+    @include backgroundImage("../images/Exclude.png") ;
+    width:375px;
+    height:80px;
+
+  }
+  .exclude {
+   top:-25px;
+   display:block;
+  }
+ 
+  .social-media{
+    width:118px;
+    height:40px;
+  }
+   .change-direction{
+    direction:ltr;
+   }
+  
+  .gotohome-btn{
+    border-radius:50% ;
+    
+  }
+ 
+ 
+.my-gradient{
+   @include gradient-x("../images/Base.png");
+  
+  }
+.second-background{
+   @include gradient-x("../images/Base2.png");
+}
+
+ @include media-breakpoint-up(sm){
+    .position-timeline{
+      top:-90px;
+   }
+  
+    
+  }
+  @include media-breakpoint-up(md) { 
+    .exclude {
+       display:none;
+     }
+     .gotohome-btn{
+      border-radius:5px ; 
+    }
+    .change-direction{
+      direction: rtl;
+     }
+     .position-cherry{
+      left:10%;
+      top:50%;
+     }
+    }
+    @include media-breakpoint-up(lg) { 
+      .second-background{
+        @include gradient-x("../images/Base1.png");
+      }
+      .position-cherry{
+        top:35%;
+       }
+    }
+
